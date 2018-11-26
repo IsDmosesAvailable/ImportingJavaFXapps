@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane alignment="center" hgap="10" prefHeight="585.0" prefWidth="507.0" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <VBox prefHeight="600.0" prefWidth="507.0">
+         <children>
+            <Pane prefHeight="600.0" prefWidth="507.0">
+               <children>
+                  <Label layoutX="256.0" layoutY="376.0" prefHeight="47.0" prefWidth="226.0" text="PokeStarter Quiz" />
+                  <ListView fx:id="possibleAnswers" layoutX="14.0" layoutY="365.0" onInputMethodTextChanged="#userAnswered" prefHeight="115.0" prefWidth="226.0" />
+                  <TextField fx:id="usersAnswer" layoutX="44.0" layoutY="500.0" onAction="#userAnswered" text="(Input Unnamed)" />
+                  <ImageView fx:id="quizImage" fitHeight="342.0" fitWidth="484.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="246.0" layoutY="438.0" prefHeight="83.0" prefWidth="206.0" />
+               </children>
+            </Pane>
+         </children></VBox>
+   </children>
+</GridPane>
